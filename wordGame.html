@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Word Game</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Donald Meadows">
+        <meta name="description" content="A simple word guessing game.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="wordGame.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="wordGame.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>A Simple Word Game</h1>
+        </header>
+
+        <div id="gameStart">
+            <ul>
+                <li>In this game you will be given five random letters. Combine these letters together to make words.</li>
+                <li>All words are a maximum of five letters long. Individual words may only be used once.</li>
+                <li>Each letter can only be used once per word, but you do not have to use all five letters.</li>
+                <li>Click the Submit button if you think you have a word. If it is on the list (consisting of 1194 common English words) then it will appear on the list below.</li>
+                <li>You will get a number of points equal to the number of letters in the word you submit.</li>
+                <li>If you cannot think of a word with the letters given then click the Randomize button to generate five new letters.</li>
+                <li>After starting click on the Quit button to end the game and bring this text back.</li>
+            </ul>
+
+            <button id="start">Start</button>
+
+            <p id="highScore">High Score: <span id="highScoreStorage">00</span></p>
+
+            <br>
+        </div>
+
+        <div id="gameStorage">
+
+            <p id="clock">2:00</p>
+
+            <p id="score">Score: <span id="scoreNumber">00</span></p>
+
+            <div id="buttonContainer">
+                <button class="roundButton" id="button1">-</button>
+                <button class="roundButton" id="button2">-</button>
+                <button class="roundButton" id="button3">-</button>
+                <button class="roundButton" id="button4">-</button>
+                <button class="roundButton" id="button5">-</button>
+            </div>
+
+            <p id="wordEntry"></p>
+
+            <button id="submit">Submit</button>
+
+            <button id="randomize">Randomize</button>
+
+            <ul id="usedWords1">
+            </ul>
+
+            <ul id="usedWords2">
+            </ul>
+
+            <ul id="usedWords3">
+            </ul>
+
+            <ul id="usedWords4">
+            </ul>
+
+            <button id="quit">Quit</button>
+
+        </div>
+
+        <footer>
+            Word list courtesy of Education First's <a href="https://www.ef.edu/english-resources/english-vocabulary/top-3000-words/">Resources for learning English</a>, list edited to remove words more than 5 letters long.<br>
+            Site by: Donald Meadows<br>
+            Last Edited: 5/4/2021
+        </footer>
+
+    </body>
+</html>
+
+
